@@ -1,0 +1,14 @@
+{
+  "schema": "mathesis.materials.v1",
+  "work": "central-edges",
+  "version": 3,
+  "repository_url": "https://github.com/mathesis-papers/central-edges",
+  "site_url": "https://papers.trureturing.org/central-edges/",
+  "doi": null,
+  "reading": {
+    "en": "https://papers.trureturing.org/central-edges/en/",
+    "zh": "https://papers.trureturing.org/central-edges/zh/"
+  },
+  "slides": [],
+  "visualizations": []
+}

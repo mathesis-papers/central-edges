@@ -1,0 +1,674 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper,margin=27mm]{geometry}
+\usepackage{amsmath,amssymb,amsthm,booktabs,array,longtable}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+\setlength{\emergencystretch}{2em}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newcommand{\CG}{\operatorname{CG}}
+\newcommand{\E}{\operatorname{E}}
+\newcommand{\diam}{\operatorname{diam}}
+\newcommand{\ceil}[1]{\left\lceil #1\right\rceil}
+\title{Refuting Dovgoshey--Rovenska Conjecture 4.2:\\
+arXiv:2610.11596v1, Section 4, p.~13:
+sharp bounds and corollaries of Petrov (2022) and Dovgoshey et al. (2026)}
+\author{Haobo Ma\\\small ChronoAI Pte Ltd, Singapore
+\and Wenlin Zhang\\\small National University of Singapore\\
+\small ChronoAI Pte Ltd, Singapore}
+\date{7 November 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+We refute Conjecture 4.2 in Section 4, p.~13, of Dovgoshey and
+Rovenska, arXiv:2610.11596v1, extend their (2026) central-edge bounds,
+and derive companion corollaries from Petrov's (2022) homogeneous-tree
+characterization and Dovgoshey et al.'s (2026) perfect-binary-tree theorem.
+A four-point ultrametric has six central edges against four in a metric.
+For every $n\ge4$, the minimum number of central edges in a three-central
+metric space is $2\ceil{n/2}$; within ultrametric spaces it is
+$2n-4+\ceil{n/2}$.
+Thus no three-central ultrametric minimizes over all metrics of the same
+order. The distance-class construction also refutes Conjecture 4.1 and
+answers Problem 4.3 in the same section: the smallest order of a metric
+space with a $k$-element center is $1$ for $k=1$, $k$ for even $k$,
+and $k+1$ for odd $k\ge3$.
+Earlier counterexamples to Conjecture 4.1 occur in Love (2023) and
+Bargetz et al. (2024).
+More generally, at every feasible center size $k$ and order $n\ge3$,
+the metric edge minimum is $(k-1)\ceil{n/2}$.
+The tree corollaries give the isometry groups and sphere counts of
+minimum-order ultrametrics, with explicit coverage of the related questions.
+\end{abstract}
+\noindent\small Licensed under Creative Commons Attribution 4.0 International
+(\href{https://creativecommons.org/licenses/by/4.0/}{CC BY 4.0}).\normalsize
+
+\section{The conjecture and a four-point counterexample}
+Conjecture 4.2 of Dovgoshey and Rovenska~\cite[Section 4, p.~13]{DR}
+compares a prescribed ultrametric central graph with all metric competitors.
+The proposed equivalence is false: a four-point example gives six central
+edges against four, and the sharp minima in the two classes differ at
+every admissible order.
+
+The all-metric statements differ from the earlier ultrametric minimum-order
+theorem of Dovgoshey and Rovenska~\cite[Corollary 3.12 and Example 3.13]{UM}
+and the rigidity theorem of Dovgoshey, Jaiswal, Kainth, Kaur and
+Rovenska~\cite[Theorems 4.1--4.2]{BT}. The former gives minimum order
+$2^{k-1}$ for a $k$-element ultrametric center; the latter characterizes
+the equality spaces by perfect binary trees with one distance per level.
+Section~\ref{sec:trees} states the short consequences of that prior theorem
+separately from the metric edge bounds.
+The homogeneous-tree characterization is already present in
+Petrov~\cite[Theorem 2.2, pp.~6--7]{P}; the corresponding assertion
+below is a short reproof, not a new characterization.
+
+The center of distances, introduced by Bielas, Plewik and
+Walczy\'nska~\cite{BPW}, is
+\[
+ C(X)=\{t\ge0:\ \text{for every }x\in X\text{ there is }y\in X
+                   \text{ with }d(x,y)=t\}.
+\]
+In particular, $0\in C(X)$. We use the definitions of
+Dovgoshey and Rovenska~\cite[Definitions 1.2 and 2.14]{DR}:
+the central graph $\CG_X$ has vertex set $X$ and an edge $\{x,y\}$,
+with $x\ne y$, when $d(x,y)\in C(X)$; the diametrical graph $G_X$
+has an edge when $d(x,y)=\diam X$. A graph is $k$-central when
+$|C(X)|=k$. Edges are unordered and loops are excluded.
+
+Conjecture 4.2 of~\cite[Section 4, p.~13]{DR} asserts that for a
+three-central finite ultrametric space $X$, $|X|\ge4$, the following
+conditions are equivalent:
+\begin{enumerate}
+\item[(i)] $G_X$ is complete bipartite on parts $X_1,X_2$ with
+$\min(|X_1|,|X_2|)=2$, and $\CG_X=G_X\cup S_1\cup S_2$, where
+$S_i$ is a star on $X_i$.
+\item[(ii)] $|\E(\CG_X)|\le |\E(\CG_Y)|$ for every three-central
+metric space $Y$ with $|Y|=|X|$.
+\end{enumerate}
+The comparator in (ii) is an arbitrary metric space, not an ultrametric
+space. The distinction already matters at order four.
+
+\begin{theorem}\label{thm:four}
+Conjecture 4.2 is false. Its implication $\mathrm{(i)}\Rightarrow
+\mathrm{(ii)}$ fails for a four-point space.
+\end{theorem}
+\begin{proof}
+Take $X=\{0,1,2,3\}$ with distance matrix
+\[
+ D_X=\begin{pmatrix}
+ 0&1&1/2&1\\1&0&1&1/2\\1/2&1&0&1\\1&1/2&1&0
+ \end{pmatrix}.
+\]
+The two parts $\{0,2\}$ and $\{1,3\}$ have internal distance $1/2$
+and cross-distance $1$, so this is an ultrametric. Every row has
+distance set $\{0,1/2,1\}$, hence $C(X)=\{0,1/2,1\}$ and
+$\CG_X=K_4$. Its diameter graph is $K_{2,2}$, and adjoining the edge
+within each part gives the two required stars. Thus (i) holds and
+$|\E(\CG_X)|=6$.
+
+Let $Y=\{0,4,5,9\}\subset\mathbb R$ with its usual distance.
+Its four row-distance sets are
+\[
+ \{0,4,5,9\},\quad\{0,1,4,5\},\quad
+ \{0,1,4,5\},\quad\{0,4,5,9\}.
+\]
+Their intersection is $C(Y)=\{0,4,5\}$. Its central edges are precisely
+$\{0,4\},\{0,5\},\{4,9\},\{5,9\}$, so
+$|\E(\CG_Y)|=4<6$. Both centers have three elements, as required.
+\end{proof}
+
+\section{The sharp minimum over all metrics}
+For a positive distance $t$ put
+\[
+ F_t=\{\{x,y\}:x\ne y,\ d(x,y)=t\}.
+\]
+Then $t\in C(X)$ exactly when $F_t$ is a spanning edge cover: each
+vertex belongs to at least one edge. Distinct distance classes have
+disjoint edge sets. This observation refines the nonempty-central-graph
+bound in~\cite[Theorem 3.10]{DR} by fixing the number of central
+distances.
+
+\begin{lemma}\label{lem:cover}
+If a finite metric space has $n$ points and $|C(X)|=k$, then
+\[
+ |\E(\CG_X)|\ge (k-1)\ceil{n/2}.
+\]
+\end{lemma}
+\begin{proof}
+Each of the $k-1$ positive central distances has a spanning edge cover
+$F_t$. Counting incidences gives $2|F_t|\ge n$. Sum the resulting
+$|F_t|\ge\ceil{n/2}$ over the disjoint classes.
+\end{proof}
+
+The following elementary realization uses the same narrow-band metric
+principle as~\cite[proof of Theorem 3.8, formula (19)]{DR}.
+Suppose $F_1,\ldots,F_s$ are edge-disjoint spanning edge covers of
+$K_n$, $n\ge3$. Give all edges of $F_i$ the same length $a_i$, with
+the $a_i$ distinct in $[1,2)$, and give every remaining edge its own
+distinct length in $[1,2)$, different from all $a_i$. Set diagonal
+distances to zero. This is a metric: in a triangle with three distinct
+vertices, the longest side is less than $2$ and the other two sum to
+at least $2$. Each $a_i$ is central. Each remaining length occurs on
+one edge and misses a third vertex, so it is not central. Consequently
+\begin{equation}\label{eq:realization}
+ C(X)=\{0,a_1,\ldots,a_s\},\qquad
+ \E(\CG_X)=F_1\cup\cdots\cup F_s.
+\end{equation}
+
+\begin{theorem}\label{thm:metric}
+For every $n\ge4$, the minimum number of central edges among
+three-central $n$-point metric spaces is $2\ceil{n/2}$.
+\end{theorem}
+\begin{proof}
+Lemma~\ref{lem:cover} supplies the lower bound. To attain it, label
+the vertices $0,\ldots,n-1$ and write the edges of their cycle as
+$e_j=\{j,j+1\pmod n\}$, $0\le j<n$.
+For even $n$, the even-indexed and odd-indexed cycle edges are two
+disjoint perfect matchings, each of size $n/2$.
+For odd $n\ge5$, let $F_1$ consist of the even-indexed edges and
+let $F_2$ consist of the odd-indexed edges together with $\{0,2\}$.
+Here $F_1$ covers every vertex, whereas the odd-indexed edges miss
+only vertex $0$. The added chord covers it and is not a cycle edge.
+Thus $F_1,F_2$ are disjoint spanning edge covers, each of size
+$(n+1)/2$. Apply~\eqref{eq:realization} with $s=2$.
+\end{proof}
+
+Condition (i) in Conjecture 4.2 prescribes exactly
+\begin{equation}\label{eq:old}
+ 2(n-2)+(2-1)+(n-2-1)=3n-6
+\end{equation}
+central edges. Such ultrametrics exist for every $n\ge4$: use two
+parts $A,B$ of sizes $2,n-2$, give all cross-pairs distance $2$,
+give pairs incident to a designated vertex in either part distance $1$,
+and give pairs of distinct remaining vertices in $B$ distance $1/2$.
+Every triangle within $B$ has either three sides $1/2$ or two sides
+$1$; triangles meeting both parts have two sides $2$. Thus the metric
+is ultrametric. Its center is $\{0,1,2\}$, since the rows in $A$
+contain no other values, and every row contains these three.
+Its central graph has the prescribed stars and cross-edges.
+Since $3n-6>2\ceil{n/2}$ for every $n\ge4$, the failure of
+Conjecture 4.2 occurs at every admissible order.
+
+\section{Comparison restricted to ultrametrics}
+A different comparison, not asserted in the source, restricts the
+competitors in (ii) to ultrametrics. The prescribed $3n-6$ edges
+still exceed the sharp minimum when $n\ge6$.
+
+\begin{theorem}\label{thm:ultra}
+For every $n\ge4$, the minimum number of central edges among
+three-central $n$-point ultrametric spaces is
+\[
+ 2n-4+\ceil{n/2}.
+\]
+Equality holds exactly when the diametrical graph is complete
+bipartite with part sizes $2,n-2$, and the other positive central
+distance has exactly $\ceil{n/2}$ edges.
+\end{theorem}
+\begin{proof}
+Write $C(X)=\{0,a,D\}$, where $D=\diam X$ and $0<a<D$.
+Indeed, the relation $d(x,y)<D$ partitions an ultrametric into
+classes $X_1,\ldots,X_r$, $r\ge2$, and every cross-distance is $D$.
+This proves directly that $D$ is central, in agreement with
+\cite[Theorem 2.15]{DR}.
+Every vertex has an $a$-neighbor in its own class, so $|X_i|\ge2$.
+The number of diameter edges is $\sum_{i<j}|X_i||X_j|$.
+Merging classes strictly decreases this sum until there are two
+classes, of sizes $p,n-p$ with $2\le p\le n-2$. Also
+\[
+ p(n-p)-2(n-2)=(p-2)(n-p-2)\ge0.
+\]
+It follows that there are at least $2n-4$ diameter edges, with
+equality exactly for two parts of sizes $2,n-2$. The class $F_a$
+has at least $\ceil{n/2}$ edges by incidence counting.
+These two bounds give the asserted inequality and equality criterion.
+
+For attainment choose parts $A,B$ of sizes $2,n-2$. Make $A$ a
+pair at distance $1$. If $|B|$ is even, partition $B$ into pairs,
+each at distance $1$. If $|B|$ is odd, partition it into one triple
+and pairs. On the triple give a designated vertex distance $1$
+from the other two and give those two distance $1/2$; give each
+pair distance $1$. Between distinct components of $B$ use distance
+$3/2$, and between $A$ and $B$ use distance $2$.
+The nested partition, and the fact that the two largest distances
+within the triple are equal, prove the ultrametric inequality.
+Every point has a distance-$1$ neighbor and a distance-$2$ neighbor;
+the rows in $A$ show that the center is exactly $\{0,1,2\}$.
+There are $2(n-2)$ diameter edges and $n/2$ distance-$1$ edges for
+even $n$, or $2+(n-3)/2=(n+1)/2$ for odd $n$.
+\end{proof}
+
+For $n=6$ this construction has $8+3=11$ central edges, whereas
+condition (i) prescribes $12$. More generally,
+$2n-4+\ceil{n/2}<3n-6$ for $n\ge6$.
+Finally, $2n-4>\ceil{n/2}$ for every $n\ge4$. Comparing
+Theorems~\ref{thm:metric} and~\ref{thm:ultra} therefore shows that
+\emph{no} three-central ultrametric satisfies the original (ii).
+
+\section{The companion conjecture and minimum-order question}
+The same distance-class viewpoint answers the other two items in
+\cite[Section 4, p.~13]{DR}. Conjecture 4.1 asserts that a metric
+space with $n$ points can have a complete, $n$-central graph exactly
+when $n\in\{1,2,4\}$. The correct set of orders is $1$ together
+with all positive even integers.
+
+We recall the classical cyclic one-factorization~\cite[Theorem 9.1, p.~85]{H},
+and give its proof to specify the metric explicitly. For even $n=2m$, use
+vertices $\{\infty\}\cup\mathbb Z_q$, $q=2m-1$, and let
+\begin{equation}\label{eq:factor}
+ M_r=\{\{\infty,r\}\}\ \cup\
+ \bigl\{\{r+j,r-j\}:1\le j\le m-1\bigr\},\qquad r\in\mathbb Z_q.
+\end{equation}
+Each $M_r$ is a perfect matching, since the nonzero residues modulo
+the odd number $q$ occur once as $\pm j$, $1\le j\le m-1$.
+Each edge incident to $\infty$ occurs once. For a finite edge
+$\{u,v\}$ its round is uniquely determined by $2r=u+v\pmod q$,
+and its two endpoints then have the form $r\pm j$ for exactly one
+such $j$. Hence the $M_r$ partition all edges of $K_n$.
+
+\begin{theorem}\label{thm:companion}
+For $n\ge1$, a metric space of order $n$ with a complete,
+$n$-central graph exists if and only if $n=1$ or $n$ is even.
+\end{theorem}
+\begin{proof}
+Suppose $n>1$ and $|C(X)|=n$. Each vertex must realize all
+$n-1$ positive central distances at its $n-1$ other vertices.
+Thus each positive distance occurs exactly once in every row, and
+its edges form a perfect matching. In particular $n$ is even;
+all distances are central, so the graph is automatically complete.
+
+Conversely, for even $n$ give matching $M_r$ in~\eqref{eq:factor}
+length $1+r/n$, taking representatives $0\le r\le n-2$.
+All lengths lie in $[1,2)$, so they define a metric. Each of the
+$n-1$ positive lengths occurs at every vertex, and there are no
+other lengths. Thus the center has $n$ elements and the central
+graph is complete. The singleton supplies $n=1$.
+\end{proof}
+
+In particular $n=6$, with five perfect matchings at distinct lengths,
+is an explicit counterexample to Conjecture 4.1.
+An earlier displayed six-point example is Bargetz et al.~\cite[Example 3.11
+and Figure 3]{BBKL}: every row contains every positive distance exactly once.
+Love~\cite{L} had already posed this equivalent unique-distance property
+and given power-of-two examples, hence counterexamples at order eight.
+These antecedents are distinct from the complete corrected order
+classification in Theorem~\ref{thm:companion}.
+
+\begin{corollary}\label{cor:orders}
+Let $k\ge1$. The smallest order $v(k)$ of a metric space with
+$|C(X)|=k$, as asked in Problem 4.3, is
+\[
+ v(k)=\begin{cases}
+ 1,&k=1,\\
+ k,&k\text{ even},\\
+ k+1,&k\ge3\text{ odd}.
+ \end{cases}
+\]
+\end{corollary}
+\begin{proof}
+Since $C(X)\subseteq\{d(x,y):y\in X\}$ for every fixed $x$,
+we have $k\le|X|$. A singleton attains $v(1)=1$.
+For even $k$, Theorem~\ref{thm:companion} attains $v(k)=k$.
+For odd $k\ge3$, that theorem excludes order $k$, so
+$v(k)\ge k+1$. Put $n=k+1$, which is even and at least four.
+In~\eqref{eq:factor}, assign $k-1=n-2$ matchings distinct constant
+lengths in $[1,3/2)$. Assign the edges of the one remaining matching
+pairwise distinct lengths in $(3/2,2)$. Every constant matching length
+is central. Every remaining length occurs on one edge and misses
+other vertices, so it is not central. All lengths define a metric
+by the same narrow-band argument. Its center therefore has exactly
+$1+(k-1)=k$ elements, attaining order $k+1$.
+\end{proof}
+
+\section{All center sizes and the equality graphs}
+The packing ingredients also have classical antecedents. Harary's
+one-factorization~\cite[Theorem 9.1]{H} gives the even-order covers.
+Andersen's cover-index criterion~\cite[abstract]{A}, applied to a complete
+odd-order graph with one edge removed, gives the required odd-order packing:
+exactly two vertices have minimum degree, so the cover index equals that
+degree. The total edge count forces every cover in such a decomposition
+to have minimum size. The proof below supplies a direct construction.
+
+\begin{corollary}\label{cor:allk}
+For $n\ge3$, the feasible center sizes are $1\le k\le n$ when $n$
+is even, and $1\le k\le n-1$ when $n$ is odd. For each feasible pair,
+the minimum central-edge count is
+\[
+ (k-1)\ceil{n/2}.
+\]
+At $n=1$ only $k=1$ occurs; at $n=2$ only $k=2$ occurs.
+\end{corollary}
+\begin{proof}
+The row bound gives $k\le n$, and Theorem~\ref{thm:companion}
+excludes $k=n$ for odd $n>1$. Lemma~\ref{lem:cover} gives the edge
+bound. For even $n\ge4$, take any $k-1$ matchings in
+\eqref{eq:factor} and apply~\eqref{eq:realization}.
+
+For odd $n\ge3$, delete vertex $\infty$ from a one-factorization of
+$K_{n+1}$. The resulting $n$ disjoint matchings $N_r$ partition
+$K_n$, and $N_r$ misses exactly vertex $r$. Reserve two matchings
+$N_a,N_b$. Their union consists of a path from $a$ to $b$ and even
+cycles: vertices $a,b$ have degree one and all other vertices have
+degree two. Orient the path toward $b$ and each cycle cyclically.
+For every $r\notin\{a,b\}$, let $f_r$ be the edge directed out of
+$r$. These edges are distinct and belong to the reserved matchings.
+Thus $F_r=N_r\cup\{f_r\}$ are $n-2$ disjoint spanning edge covers,
+each of size $(n+1)/2$. Select any $k-1$ of them and apply
+\eqref{eq:realization}. Selecting none realizes $k=1$ by distinct
+edge lengths, also for even $n\ge4$. The two exceptional orders
+follow directly from the definition of the center.
+\end{proof}
+
+\begin{corollary}\label{cor:graph}
+Among nonempty central graphs of order $n\ge2$, the minimum is
+$\ceil{n/2}$. Equality graphs are $(n/2)P_2$ for even $n$ and
+$P_3\cup((n-3)/2)P_2$ for odd $n$. They are bicentral.
+Among all central graphs of order $n\ge3$, the minimum is zero.
+\end{corollary}
+\begin{proof}
+A nonempty central graph has no isolated vertex: one positive
+central distance already reaches every vertex. At the minimum,
+$k=2$ by Lemma~\ref{lem:cover}. For even $n$, the degree sum is $n$,
+so every degree is one. For odd $n$, it is $n+1$, so exactly one
+degree is two and all others are one. This gives the stated graphs.
+Conversely these spanning covers are realized by
+\eqref{eq:realization}; order two is immediate. Distinct edge lengths
+in $[1,2)$ give the empty graph when $n\ge3$.
+\end{proof}
+The nonempty minimum is Dovgoshey--Rovenska's
+Theorem 3.10~\cite{DR}, reproved here by degree counting.
+For $n=2h+1$, the component count is $P_3\cup(h-1)P_2$;
+this corrects the printed $P_3\cup hP_2$ in their Theorem 3.12,
+which has $n+2$ vertices. This also specifies the nonempty equality
+case in their Problem 1.3; without that restriction, the minimum is zero.
+
+\section{Corollaries of the prior ultrametric tree theorem}\label{sec:trees}
+Call a finite ultrametric space MCD when
+$|X|=2^{|C(X)|-1}$. Theorem 4.1 of Dovgoshey et al.~\cite{BT}
+identifies its representing tree as a perfect binary tree whose
+labels are constant on levels and strictly decrease toward the leaves.
+Here a representing tree is the tree of recursively nested diameter
+classes, with each node labeled by its diameter. Two leaves have
+distance equal to the label of their last common ancestor. This
+follows directly by taking the first diameter partition separating them.
+An isometry permutes these classes at every node; conversely a
+label-preserving tree automorphism preserves all leaf distances.
+Consequently two MCD spaces with equally many points are weakly similar:
+identify their binary trees and send the ordered height labels of one
+to those of the other by the unique increasing bijection.
+Conversely a weak similarity sends each row-distance set to its
+image under that bijection, so it preserves the cardinality of their
+intersection, the center.
+This proves Conjecture 4.2 of~\cite[p.~20]{UM} as a consequence of
+the prior classification. Its Conjectures 4.3 and 4.4 are already
+proved explicitly in~\cite[Corollaries 4.3 and 4.6]{BT}:
+equal centers give isometric MCD spaces, and every finite nonnegative
+set containing zero is the center and distance set of an MCD space.
+Additional proofs of these prescribed-center and extremal-rigidity statements
+appear in Korea Superintelligence Labs~\cite[Theorem 6.1, Proposition 7.4
+and Corollary 7.5]{KSI}.
+
+The group recursion below is the binary specialization of the classical
+wreath-product description of level-regular rooted-tree automorphisms;
+see Ceccherini-Silberstein et al.~\cite[Sections 2.8 and 3.1, pp.~11--12]{G}.
+
+\begin{corollary}\label{cor:binary}
+Let $X$ be MCD, $|X|=2^h$, and write
+$C(X)=\{0=c_0<c_1<\cdots<c_h\}$. Then $X$ is homogeneous,
+meaning that its isometry group is transitive on points, and
+\[
+ \operatorname{Is}(X)\cong G_h,\qquad
+ G_0=\{1\},\qquad
+ G_h=(G_{h-1}\times G_{h-1})\rtimes C_2,
+ \qquad |G_h|=2^{2^h-1},
+\]
+where $C_2$ swaps the two factors. Moreover, for every $p\in X$,
+\[
+ |\{x:d(p,x)=c_i\}|=2^{i-1}\quad(1\le i\le h).
+\]
+\end{corollary}
+\begin{proof}
+The two root subtrees are identically labeled perfect binary trees
+of height $h-1$. Every isometry either preserves or swaps them,
+and every pair of subtree isometries extends. This proves the group
+recursion and transitivity by induction. If $g_h=|G_h|$, then
+$g_0=1$ and $g_h=2g_{h-1}^2$, giving the displayed order.
+The sibling subtree at height $i$ has $2^{i-1}$ leaves, precisely
+the points at distance $c_i$ from $p$.
+\end{proof}
+This proves both parts of Conjecture 5.1 and answers Problem 5.3
+of~\cite[Section 5, pp.~26--27]{BT}, as consequences of its Theorem 4.1.
+
+\begin{corollary}\label{cor:homogeneous}
+For a finite homogeneous ultrametric space $X$,
+$|\operatorname{Is}(X)|\ge2^{|X|-1}$, with equality exactly when
+$X$ is MCD. A finite rooted tree is the representing tree of some
+homogeneous ultrametric space exactly when it has no vertex of
+out-degree one and all vertices at the same level have the same
+out-degree.
+\end{corollary}
+\begin{proof}
+Suppose $|X|>1$. Transitivity permutes the diameter classes
+transitively, so there are $r\ge2$ isometric classes, each of size
+$m$, with $|X|=rm$. Each class $Y$ is homogeneous: an isometry
+mapping two of its points must preserve their diameter class.
+All isometries of the classes extend independently, and every
+permutation of the classes extends using chosen identifications.
+Thus $|\operatorname{Is}(X)|=r!|\operatorname{Is}(Y)|^r$.
+Induct on $|X|$, using $r!\ge2^{r-1}$, with equality only for $r=2$.
+Equality throughout forces binary splitting into identical subspaces
+at every depth. The distinct diameter labels along a root-to-leaf
+path then give $|C(X)|=1+\log_2|X|$, so $X$ is MCD.
+Corollary~\ref{cor:binary} proves the converse and includes the singleton.
+
+For the tree assertion, a transitive isometry group is transitive
+on nodes at any fixed depth: map a leaf below one node to a leaf
+below the other, and then map their ancestors. Hence their
+out-degrees coincide, and a diameter partition has no unary node.
+Conversely the stated conditions force all leaves to have one
+depth, with a common branching number at each earlier level.
+Assign a strictly decreasing positive label to each internal level
+and zero to the leaf level. The last-common-ancestor distance is
+ultrametric, and permutations of the identical subtrees act
+transitively on leaves. Its diameter partitions give the prescribed tree.
+\end{proof}
+The group criterion is Conjecture 5.2 of~\cite[p.~27]{BT}.
+The rooted-tree characterization is Conjecture 5.6 of~\cite[pp.~27--28]{BT},
+reproved from the earlier characterization in
+Petrov~\cite[Theorem 2.2, pp.~6--7]{P}: forgetting the level labels
+gives necessity, and choosing decreasing labels on the levels gives
+sufficiency.
+
+\begin{corollary}\label{cor:spheres}
+For a finite ultrametric with center $\{0=c_0<\cdots<c_h\}$,
+the sphere counts $1,1,2,\ldots,2^{h-1}$ at every point hold
+exactly when $X$ is MCD with $|X|=2^h$.
+\end{corollary}
+\begin{proof}
+The forward assertion for MCD spaces is Corollary~\ref{cor:binary}.
+Conversely assume the prescribed counts and $h\ge1$. The largest
+central distance $c_h$ is the diameter. In its complete multipartite
+graph each vertex has $2^{h-1}$ neighbors, so all $r\ge2$ parts
+have the same size $t$, with $(r-1)t=2^{h-1}$. The earlier spheres
+lie within a part and contain in total $2^{h-1}$ points, including
+the center point. Hence $t\ge2^{h-1}$, forcing $r=2$, $t=2^{h-1}$
+and $|X|=2^h$. Thus $X$ is MCD. If $h=0$, a nonsingleton finite
+ultrametric would have its positive diameter in its center, so $|X|=1$.
+\end{proof}
+This proves Conjecture 5.5 of~\cite[p.~27]{BT} without assuming that
+all distances are central in its forward implication.
+
+For Problem 5.4 of~\cite[p.~27]{BT}, a complete answer within
+homogeneous ultrametrics is also immediate. It expresses the branching
+description of Delhomm\'e et al.~\cite[Section 3.1, Lemma 1;
+Section 3.2, Proposition 1(3)]{D} in sphere counts. Given positive integers
+$b_0,\ldots,b_h$, put $S_i=\sum_{j=0}^i b_j$.
+Such a homogeneous space has these sphere counts exactly when
+$b_0=1$ and $S_{i-1}$ divides $S_i$ for every $i\ge1$.
+Indeed, its row-distance sets coincide, so $D(X)=C(X)$; balls of
+radius $c_i$ have size $S_i$ and partition into equally sized
+radius-$c_{i-1}$ balls. Conversely choose branching numbers
+$S_i/S_{i-1}\ge2$ from the leaves upward and assign the increasing
+heights $c_i$. The spheres have size $S_i-S_{i-1}=b_i$.
+Problem 5.4 for arbitrary ultrametrics, which may have noncentral
+distances, is not covered by this divisibility criterion.
+
+\section{Coverage and verification}
+\small
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{.34\linewidth}>{\raggedright\arraybackslash}p{.59\linewidth}@{}}
+\toprule
+Source item and locator & Mathematical coverage\\
+\midrule
+\endhead
+\cite{DR}, Conjecture 4.2, Section 4, p.~13 &
+Refuted and corrected: Theorem~\ref{thm:four} and the sharp metric
+replacement in Theorem~\ref{thm:metric}.\\[3pt]
+\cite{DR}, Conjecture 4.1, Section 4, p.~13 &
+Refuted and corrected: orders $1$ and even, Theorem~\ref{thm:companion}.
+Prior counterexamples: Love (2023)~\cite{L}, Bargetz et al. (2024)~\cite{BBKL}.\\[3pt]
+\cite{DR}, Problem 4.3, Section 4, p.~13 &
+Answered: the all-metric minimum-order formula, Corollary~\ref{cor:orders}.\\[3pt]
+\cite{DR}, Problem 1.3; Theorems 3.10, 3.12, pp.~1, 8, 11 &
+Nonempty edge bound reproved; prior proof Dovgoshey--Rovenska (2026).
+Odd equality component count corrected in Corollary~\ref{cor:graph}.
+The unrestricted minimum is zero for $n\ge3$.\\[3pt]
+\cite{DR}, Theorem 3.8, pp.~6--8; Theorem 3.13, p.~12 &
+Prior proofs cited: narrow-band realization and the ultrametric
+$n-1$ bound. Fixed-center extensions are
+Theorem~\ref{thm:ultra} and Corollary~\ref{cor:allk}.\\[3pt]
+Ultrametric-only variant of Conjecture 4.2(ii) &
+Not asserted in the source; the proposed star minimum fails at $n=6$.
+Theorem~\ref{thm:ultra} proves the corrected extremum.\\[3pt]
+\cite{UM}, Corollary 3.12 and Example 3.13, p.~19 &
+Prior proof cited: Dovgoshey--Rovenska (26 March 2026), ultrametric
+minimum order $2^{k-1}$.\\[3pt]
+\cite{UM}, Conjectures 4.2--4.4, p.~20 &
+Prior proof cited: Dovgoshey et al. (10 September 2026),
+Theorem 4.1 and Corollaries 4.3 and 4.6 of~\cite{BT}.
+The weak-similarity consequence is written out in Section~\ref{sec:trees}.\\[3pt]
+\cite{KSI}, Theorem 6.1 and Proposition 7.4--Corollary 7.5, pp.~7--8 &
+Additional proofs cited: prescribed centers, extremal rigidity,
+and forward sphere counts (Theorem 7.3).\\[3pt]
+\cite{BT}, Conjecture 5.1, pp.~26--27 &
+Proved as tree-theorem corollaries: homogeneity and group order,
+Corollary~\ref{cor:binary}.\\[3pt]
+\cite{BT}, Problem 5.3, p.~27 &
+Answered: the isometry-group recursion, Corollary~\ref{cor:binary},
+specializing the classical tree-group formula~\cite{G}.\\[3pt]
+\cite{BT}, Conjecture 5.2, p.~27 &
+Proved: the isometry-group criterion, Corollary~\ref{cor:homogeneous}.\\[3pt]
+\cite{BT}, Conjecture 5.6, pp.~27--28 &
+Reproved; prior proof Petrov (2022); arXiv version (2024), Theorem 2.2.
+Corollary~\ref{cor:homogeneous} states its unlabeled-tree consequence.\\[3pt]
+\cite{BT}, Conjecture 5.5, p.~27 &
+Proved: sphere-count characterization, Corollary~\ref{cor:spheres}.
+Forward counts also follow from~\cite[Theorem 7.3]{KSI}.\\[3pt]
+\cite{BT}, Problem 5.4, p.~27 &
+Not covered in full. The homogeneous subcase has the divisibility
+criterion proved in Section~\ref{sec:trees}.\\
+\bottomrule
+\end{longtable}
+\normalsize
+
+The pinned Lean file
+\href{https://github.com/the-omega-institute/trureturing/blob/8aa554ef66d0c1970b81b49632cd8a73a09ee34f/D5/S3/Combinatorics/Geometry/DovgosheyRovenskaCentralEdges.lean}{\texttt{DovgosheyRovenskaCentralEdges.lean}}
+contains the declaration
+\begin{center}\small
+\path{D5.S3.Combinatorics.Geometry.DovgosheyRovenskaCentralEdges.result}
+\end{center}
+with statement $\neg\texttt{claim}$. Here \texttt{claim} is the
+equivalence in Conjecture 4.2 with the source's metric comparator.
+The declaration uses the same four-point spaces as
+Theorem~\ref{thm:four}: the induced $2$-adic metric on $0,1,2,3$
+and the real metric on $0,4,5,9$. Its scope is the refutation,
+not the all-order bounds or the companion results.
+All the additional extrema, matching constructions, equality graphs,
+and tree corollaries have written proofs above. The latter use the
+prior classification in~\cite[Theorem 4.1]{BT}.
+
+The accompanying \texttt{verify.py} checks the four-point matrices,
+the three all-order central-edge constructions for $4\le n\le32$,
+the matching constructions for $1\le k\le24$, and all symmetric
+distance tables on two to four vertices with off-diagonal values
+in $\{1,2,3\}$. It also checks every feasible center size for
+$3\le n\le20$, binary sphere counts through height five,
+and all isometries of the binary examples through height three.
+Arithmetic is exact. These finite checks support
+the examples; the all-parameter conclusions follow from the proofs.
+
+\begin{thebibliography}{99}
+\bibitem{BPW}
+W.~Bielas, S.~Plewik and M.~Walczy\'nska,
+\emph{On the center of distances}, European Journal of Mathematics
+\textbf{4} (2018), 687--698.
+\href{https://doi.org/10.1007/s40879-017-0199-4}{doi:10.1007/s40879-017-0199-4}.
+
+\bibitem{DR}
+O.~Dovgoshey and O.~Rovenska,
+\emph{On the Graph Corresponding to Center of Distances of Metric Space},
+\href{https://arxiv.org/abs/2610.11596v1}{arXiv:2610.11596v1}
+(8 October 2026).
+
+\bibitem{UM}
+O.~Dovgoshey and O.~Rovenska,
+\emph{On the center of distances of finite ultrametric spaces},
+\href{https://arxiv.org/abs/2603.25850v1}{arXiv:2603.25850v1}
+(26 March 2026).
+
+\bibitem{BT}
+O.~Dovgoshey, N.~S.~Jaiswal, S.~P.~S.~Kainth, G.~Kaur and O.~Rovenska,
+\emph{Maximal Center of Distances of Finite Ultrametric Spaces and
+Perfect Binary Trees},
+\href{https://arxiv.org/abs/2609.11384v1}{arXiv:2609.11384v1}
+(10 September 2026).
+
+\bibitem{P}
+E.~A.~Petrov,
+\emph{Hereditary properties of finite ultrametric spaces},
+Journal of Mathematical Sciences \textbf{264} (2022), 423--440.
+\href{https://doi.org/10.1007/s10958-022-06009-1}{doi:10.1007/s10958-022-06009-1}.
+Author version:
+\href{https://arxiv.org/abs/2412.17421v1}{arXiv:2412.17421v1}
+(23 December 2024).
+
+\bibitem{L}
+J.~Love,
+\emph{Metric spaces where each point sees each distance exactly once},
+Mathematics Stack Exchange (7 February 2023), question 4634500.
+\url{https://math.stackexchange.com/questions/4634500}.
+
+\bibitem{BBKL}
+C.~Bargetz, A.~Barto\v{s}, W.~Kubi\'s and F.~Luggin,
+\emph{Homogeneous isosceles-free spaces},
+\href{https://arxiv.org/abs/2305.03163v2}{arXiv:2305.03163v2}
+(13 March 2024), Example 3.11 and Figure 3.
+
+\bibitem{H}
+F.~Harary, \emph{Graph Theory}, Addison-Wesley, Reading, MA (1969),
+Chapter 9, Theorem 9.1, p.~85.
+
+\bibitem{A}
+L.~D. Andersen, \emph{Lower bounds on the cover-index of a graph},
+Discrete Mathematics \textbf{25}(3) (1979), 199--210.
+\href{https://doi.org/10.1016/0012-365X(79)90076-1}{doi:10.1016/0012-365X(79)90076-1}.
+
+\bibitem{G}
+T.~Ceccherini-Silberstein, D.~D'Angeli, A.~Donno, F.~Scarabotti and F.~Tolli,
+\emph{Finite Gelfand pairs: examples and applications},
+in \emph{Ischia Group Theory 2008}, World Scientific (2009), 7--41.
+\url{https://www.researchgate.net/publication/228539253_Finite_Gelfand_pairs_Examples_and_applications}.
+
+\bibitem{D}
+C.~Delhomm\'e, C.~Laflamme, M.~Pouzet and N.~Sauer,
+\emph{On homogeneous ultrametric spaces},
+\href{https://arxiv.org/abs/1509.04346v2}{arXiv:1509.04346v2}
+(29 November 2016; first version 14 September 2015).
+
+\bibitem{KSI}
+Korea Superintelligence Labs,
+\emph{The center of distances of a finite ultrametric space:
+centered spheres, prescribed centers, and extremal rigidity}, version 1.
+\url{https://ideosphere.ai/papers/ultra-center-log2-v1.pdf}.
+\end{thebibliography}
+\end{document}

@@ -1,0 +1,1333 @@
+{
+  "all_center_sizes": [
+    {
+      "cases": [
+        {
+          "center_size": 1,
+          "central_edges": 0
+        },
+        {
+          "center_size": 2,
+          "central_edges": 2
+        }
+      ],
+      "order": 3
+    },
+    {
+      "cases": [
+        {
+          "center_size": 1,
+          "central_edges": 0
+        },
+        {
+          "center_size": 2,
+          "central_edges": 2
+        },
+        {
+          "center_size": 3,
+          "central_edges": 4
+        },
+        {
+          "center_size": 4,
+          "central_edges": 6
+        }
+      ],
+      "order": 4
+    },
+    {
+      "cases": [
+        {
+          "center_size": 1,
+          "central_edges": 0
+        },
+        {
+          "center_size": 2,
+          "central_edges": 3
+        },
+        {
+          "center_size": 3,
+          "central_edges": 6
+        },
+        {
+          "center_size": 4,
+          "central_edges": 9
+        }
+      ],
+      "order": 5
+    },
+    {
+      "cases": [
+        {
+          "center_size": 1,
+          "central_edges": 0
+        },
+        {
+          "center_size": 2,
+          "central_edges": 3
+        },
+        {
+          "center_size": 3,
+          "central_edges": 6
+        },
+        {
+          "center_size": 4,
+          "central_edges": 9
+        },
+        {
+          "center_size": 5,
+          "central_edges": 12
+        },
+        {
+          "center_size": 6,
+          "central_edges": 15
+        }
+      ],
+      "order": 6
+    },
+    {
+      "cases": [
+        {
+          "center_size": 1,
+          "central_edges": 0
+        },
+        {
+          "center_size": 2,
+          "central_edges": 4
+        },
+        {
+          "center_size": 3,
+          "central_edges": 8
+        },
+        {
+          "center_size": 4,
+          "central_edges": 12
+        },
+        {
+          "center_size": 5,
+          "central_edges": 16
+        },
+        {
+          "center_size": 6,
+          "central_edges": 20
+        }
+      ],
+      "order": 7
+    },
+    {
+      "cases": [
+        {
+          "center_size": 1,
+          "central_edges": 0
+        },
+        {
+          "center_size": 2,
+          "central_edges": 4
+        },
+        {
+          "center_size": 3,
+          "central_edges": 8
+        },
+        {
+          "center_size": 4,
+          "central_edges": 12
+        },
+        {
+          "center_size": 5,
+          "central_edges": 16
+        },
+        {
+          "center_size": 6,
+          "central_edges": 20
+        },
+        {
+          "center_size": 7,
+          "central_edges": 24
+        },
+        {
+          "center_size": 8,
+          "central_edges": 28
+        }
+      ],
+      "order": 8
+    },
+    {
+      "cases": [
+        {
+          "center_size": 1,
+          "central_edges": 0
+        },
+        {
+          "center_size": 2,
+          "central_edges": 5
+        },
+        {
+          "center_size": 3,
+          "central_edges": 10
+        },
+        {
+          "center_size": 4,
+          "central_edges": 15
+        },
+        {
+          "center_size": 5,
+          "central_edges": 20
+        },
+        {
+          "center_size": 6,
+          "central_edges": 25
+        },
+        {
+          "center_size": 7,
+          "central_edges": 30
+        },
+        {
+          "center_size": 8,
+          "central_edges": 35
+        }
+      ],
+      "order": 9
+    },
+    {
+      "cases": [
+        {
+          "center_size": 1,
+          "central_edges": 0
+        },
+        {
+          "center_size": 2,
+          "central_edges": 5
+        },
+        {
+          "center_size": 3,
+          "central_edges": 10
+        },
+        {
+          "center_size": 4,
+          "central_edges": 15
+        },
+        {
+          "center_size": 5,
+          "central_edges": 20
+        },
+        {
+          "center_size": 6,
+          "central_edges": 25
+        },
+        {
+          "center_size": 7,
+          "central_edges": 30
+        },
+        {
+          "center_size": 8,
+          "central_edges": 35
+        },
+        {
+          "center_size": 9,
+          "central_edges": 40
+        },
+        {
+          "center_size": 10,
+          "central_edges": 45
+        }
+      ],
+      "order": 10
+    },
+    {
+      "cases": [
+        {
+          "center_size": 1,
+          "central_edges": 0
+        },
+        {
+          "center_size": 2,
+          "central_edges": 6
+        },
+        {
+          "center_size": 3,
+          "central_edges": 12
+        },
+        {
+          "center_size": 4,
+          "central_edges": 18
+        },
+        {
+          "center_size": 5,
+          "central_edges": 24
+        },
+        {
+          "center_size": 6,
+          "central_edges": 30
+        },
+        {
+          "center_size": 7,
+          "central_edges": 36
+        },
+        {
+          "center_size": 8,
+          "central_edges": 42
+        },
+        {
+          "center_size": 9,
+          "central_edges": 48
+        },
+        {
+          "center_size": 10,
+          "central_edges": 54
+        }
+      ],
+      "order": 11
+    },
+    {
+      "cases": [
+        {
+          "center_size": 1,
+          "central_edges": 0
+        },
+        {
+          "center_size": 2,
+          "central_edges": 6
+        },
+        {
+          "center_size": 3,
+          "central_edges": 12
+        },
+        {
+          "center_size": 4,
+          "central_edges": 18
+        },
+        {
+          "center_size": 5,
+          "central_edges": 24
+        },
+        {
+          "center_size": 6,
+          "central_edges": 30
+        },
+        {
+          "center_size": 7,
+          "central_edges": 36
+        },
+        {
+          "center_size": 8,
+          "central_edges": 42
+        },
+        {
+          "center_size": 9,
+          "central_edges": 48
+        },
+        {
+          "center_size": 10,
+          "central_edges": 54
+        },
+        {
+          "center_size": 11,
+          "central_edges": 60
+        },
+        {
+          "center_size": 12,
+          "central_edges": 66
+        }
+      ],
+      "order": 12
+    },
+    {
+      "cases": [
+        {
+          "center_size": 1,
+          "central_edges": 0
+        },
+        {
+          "center_size": 2,
+          "central_edges": 7
+        },
+        {
+          "center_size": 3,
+          "central_edges": 14
+        },
+        {
+          "center_size": 4,
+          "central_edges": 21
+        },
+        {
+          "center_size": 5,
+          "central_edges": 28
+        },
+        {
+          "center_size": 6,
+          "central_edges": 35
+        },
+        {
+          "center_size": 7,
+          "central_edges": 42
+        },
+        {
+          "center_size": 8,
+          "central_edges": 49
+        },
+        {
+          "center_size": 9,
+          "central_edges": 56
+        },
+        {
+          "center_size": 10,
+          "central_edges": 63
+        },
+        {
+          "center_size": 11,
+          "central_edges": 70
+        },
+        {
+          "center_size": 12,
+          "central_edges": 77
+        }
+      ],
+      "order": 13
+    },
+    {
+      "cases": [
+        {
+          "center_size": 1,
+          "central_edges": 0
+        },
+        {
+          "center_size": 2,
+          "central_edges": 7
+        },
+        {
+          "center_size": 3,
+          "central_edges": 14
+        },
+        {
+          "center_size": 4,
+          "central_edges": 21
+        },
+        {
+          "center_size": 5,
+          "central_edges": 28
+        },
+        {
+          "center_size": 6,
+          "central_edges": 35
+        },
+        {
+          "center_size": 7,
+          "central_edges": 42
+        },
+        {
+          "center_size": 8,
+          "central_edges": 49
+        },
+        {
+          "center_size": 9,
+          "central_edges": 56
+        },
+        {
+          "center_size": 10,
+          "central_edges": 63
+        },
+        {
+          "center_size": 11,
+          "central_edges": 70
+        },
+        {
+          "center_size": 12,
+          "central_edges": 77
+        },
+        {
+          "center_size": 13,
+          "central_edges": 84
+        },
+        {
+          "center_size": 14,
+          "central_edges": 91
+        }
+      ],
+      "order": 14
+    },
+    {
+      "cases": [
+        {
+          "center_size": 1,
+          "central_edges": 0
+        },
+        {
+          "center_size": 2,
+          "central_edges": 8
+        },
+        {
+          "center_size": 3,
+          "central_edges": 16
+        },
+        {
+          "center_size": 4,
+          "central_edges": 24
+        },
+        {
+          "center_size": 5,
+          "central_edges": 32
+        },
+        {
+          "center_size": 6,
+          "central_edges": 40
+        },
+        {
+          "center_size": 7,
+          "central_edges": 48
+        },
+        {
+          "center_size": 8,
+          "central_edges": 56
+        },
+        {
+          "center_size": 9,
+          "central_edges": 64
+        },
+        {
+          "center_size": 10,
+          "central_edges": 72
+        },
+        {
+          "center_size": 11,
+          "central_edges": 80
+        },
+        {
+          "center_size": 12,
+          "central_edges": 88
+        },
+        {
+          "center_size": 13,
+          "central_edges": 96
+        },
+        {
+          "center_size": 14,
+          "central_edges": 104
+        }
+      ],
+      "order": 15
+    },
+    {
+      "cases": [
+        {
+          "center_size": 1,
+          "central_edges": 0
+        },
+        {
+          "center_size": 2,
+          "central_edges": 8
+        },
+        {
+          "center_size": 3,
+          "central_edges": 16
+        },
+        {
+          "center_size": 4,
+          "central_edges": 24
+        },
+        {
+          "center_size": 5,
+          "central_edges": 32
+        },
+        {
+          "center_size": 6,
+          "central_edges": 40
+        },
+        {
+          "center_size": 7,
+          "central_edges": 48
+        },
+        {
+          "center_size": 8,
+          "central_edges": 56
+        },
+        {
+          "center_size": 9,
+          "central_edges": 64
+        },
+        {
+          "center_size": 10,
+          "central_edges": 72
+        },
+        {
+          "center_size": 11,
+          "central_edges": 80
+        },
+        {
+          "center_size": 12,
+          "central_edges": 88
+        },
+        {
+          "center_size": 13,
+          "central_edges": 96
+        },
+        {
+          "center_size": 14,
+          "central_edges": 104
+        },
+        {
+          "center_size": 15,
+          "central_edges": 112
+        },
+        {
+          "center_size": 16,
+          "central_edges": 120
+        }
+      ],
+      "order": 16
+    },
+    {
+      "cases": [
+        {
+          "center_size": 1,
+          "central_edges": 0
+        },
+        {
+          "center_size": 2,
+          "central_edges": 9
+        },
+        {
+          "center_size": 3,
+          "central_edges": 18
+        },
+        {
+          "center_size": 4,
+          "central_edges": 27
+        },
+        {
+          "center_size": 5,
+          "central_edges": 36
+        },
+        {
+          "center_size": 6,
+          "central_edges": 45
+        },
+        {
+          "center_size": 7,
+          "central_edges": 54
+        },
+        {
+          "center_size": 8,
+          "central_edges": 63
+        },
+        {
+          "center_size": 9,
+          "central_edges": 72
+        },
+        {
+          "center_size": 10,
+          "central_edges": 81
+        },
+        {
+          "center_size": 11,
+          "central_edges": 90
+        },
+        {
+          "center_size": 12,
+          "central_edges": 99
+        },
+        {
+          "center_size": 13,
+          "central_edges": 108
+        },
+        {
+          "center_size": 14,
+          "central_edges": 117
+        },
+        {
+          "center_size": 15,
+          "central_edges": 126
+        },
+        {
+          "center_size": 16,
+          "central_edges": 135
+        }
+      ],
+      "order": 17
+    },
+    {
+      "cases": [
+        {
+          "center_size": 1,
+          "central_edges": 0
+        },
+        {
+          "center_size": 2,
+          "central_edges": 9
+        },
+        {
+          "center_size": 3,
+          "central_edges": 18
+        },
+        {
+          "center_size": 4,
+          "central_edges": 27
+        },
+        {
+          "center_size": 5,
+          "central_edges": 36
+        },
+        {
+          "center_size": 6,
+          "central_edges": 45
+        },
+        {
+          "center_size": 7,
+          "central_edges": 54
+        },
+        {
+          "center_size": 8,
+          "central_edges": 63
+        },
+        {
+          "center_size": 9,
+          "central_edges": 72
+        },
+        {
+          "center_size": 10,
+          "central_edges": 81
+        },
+        {
+          "center_size": 11,
+          "central_edges": 90
+        },
+        {
+          "center_size": 12,
+          "central_edges": 99
+        },
+        {
+          "center_size": 13,
+          "central_edges": 108
+        },
+        {
+          "center_size": 14,
+          "central_edges": 117
+        },
+        {
+          "center_size": 15,
+          "central_edges": 126
+        },
+        {
+          "center_size": 16,
+          "central_edges": 135
+        },
+        {
+          "center_size": 17,
+          "central_edges": 144
+        },
+        {
+          "center_size": 18,
+          "central_edges": 153
+        }
+      ],
+      "order": 18
+    },
+    {
+      "cases": [
+        {
+          "center_size": 1,
+          "central_edges": 0
+        },
+        {
+          "center_size": 2,
+          "central_edges": 10
+        },
+        {
+          "center_size": 3,
+          "central_edges": 20
+        },
+        {
+          "center_size": 4,
+          "central_edges": 30
+        },
+        {
+          "center_size": 5,
+          "central_edges": 40
+        },
+        {
+          "center_size": 6,
+          "central_edges": 50
+        },
+        {
+          "center_size": 7,
+          "central_edges": 60
+        },
+        {
+          "center_size": 8,
+          "central_edges": 70
+        },
+        {
+          "center_size": 9,
+          "central_edges": 80
+        },
+        {
+          "center_size": 10,
+          "central_edges": 90
+        },
+        {
+          "center_size": 11,
+          "central_edges": 100
+        },
+        {
+          "center_size": 12,
+          "central_edges": 110
+        },
+        {
+          "center_size": 13,
+          "central_edges": 120
+        },
+        {
+          "center_size": 14,
+          "central_edges": 130
+        },
+        {
+          "center_size": 15,
+          "central_edges": 140
+        },
+        {
+          "center_size": 16,
+          "central_edges": 150
+        },
+        {
+          "center_size": 17,
+          "central_edges": 160
+        },
+        {
+          "center_size": 18,
+          "central_edges": 170
+        }
+      ],
+      "order": 19
+    },
+    {
+      "cases": [
+        {
+          "center_size": 1,
+          "central_edges": 0
+        },
+        {
+          "center_size": 2,
+          "central_edges": 10
+        },
+        {
+          "center_size": 3,
+          "central_edges": 20
+        },
+        {
+          "center_size": 4,
+          "central_edges": 30
+        },
+        {
+          "center_size": 5,
+          "central_edges": 40
+        },
+        {
+          "center_size": 6,
+          "central_edges": 50
+        },
+        {
+          "center_size": 7,
+          "central_edges": 60
+        },
+        {
+          "center_size": 8,
+          "central_edges": 70
+        },
+        {
+          "center_size": 9,
+          "central_edges": 80
+        },
+        {
+          "center_size": 10,
+          "central_edges": 90
+        },
+        {
+          "center_size": 11,
+          "central_edges": 100
+        },
+        {
+          "center_size": 12,
+          "central_edges": 110
+        },
+        {
+          "center_size": 13,
+          "central_edges": 120
+        },
+        {
+          "center_size": 14,
+          "central_edges": 130
+        },
+        {
+          "center_size": 15,
+          "central_edges": 140
+        },
+        {
+          "center_size": 16,
+          "central_edges": 150
+        },
+        {
+          "center_size": 17,
+          "central_edges": 160
+        },
+        {
+          "center_size": 18,
+          "central_edges": 170
+        },
+        {
+          "center_size": 19,
+          "central_edges": 180
+        },
+        {
+          "center_size": 20,
+          "central_edges": 190
+        }
+      ],
+      "order": 20
+    }
+  ],
+  "arithmetic": "exact integers and rational fractions",
+  "central_edge_families": [
+    {
+      "condition_i_edges": 6,
+      "metric_minimum": 4,
+      "order": 4,
+      "ultrametric_minimum": 6
+    },
+    {
+      "condition_i_edges": 9,
+      "metric_minimum": 6,
+      "order": 5,
+      "ultrametric_minimum": 9
+    },
+    {
+      "condition_i_edges": 12,
+      "metric_minimum": 6,
+      "order": 6,
+      "ultrametric_minimum": 11
+    },
+    {
+      "condition_i_edges": 15,
+      "metric_minimum": 8,
+      "order": 7,
+      "ultrametric_minimum": 14
+    },
+    {
+      "condition_i_edges": 18,
+      "metric_minimum": 8,
+      "order": 8,
+      "ultrametric_minimum": 16
+    },
+    {
+      "condition_i_edges": 21,
+      "metric_minimum": 10,
+      "order": 9,
+      "ultrametric_minimum": 19
+    },
+    {
+      "condition_i_edges": 24,
+      "metric_minimum": 10,
+      "order": 10,
+      "ultrametric_minimum": 21
+    },
+    {
+      "condition_i_edges": 27,
+      "metric_minimum": 12,
+      "order": 11,
+      "ultrametric_minimum": 24
+    },
+    {
+      "condition_i_edges": 30,
+      "metric_minimum": 12,
+      "order": 12,
+      "ultrametric_minimum": 26
+    },
+    {
+      "condition_i_edges": 33,
+      "metric_minimum": 14,
+      "order": 13,
+      "ultrametric_minimum": 29
+    },
+    {
+      "condition_i_edges": 36,
+      "metric_minimum": 14,
+      "order": 14,
+      "ultrametric_minimum": 31
+    },
+    {
+      "condition_i_edges": 39,
+      "metric_minimum": 16,
+      "order": 15,
+      "ultrametric_minimum": 34
+    },
+    {
+      "condition_i_edges": 42,
+      "metric_minimum": 16,
+      "order": 16,
+      "ultrametric_minimum": 36
+    },
+    {
+      "condition_i_edges": 45,
+      "metric_minimum": 18,
+      "order": 17,
+      "ultrametric_minimum": 39
+    },
+    {
+      "condition_i_edges": 48,
+      "metric_minimum": 18,
+      "order": 18,
+      "ultrametric_minimum": 41
+    },
+    {
+      "condition_i_edges": 51,
+      "metric_minimum": 20,
+      "order": 19,
+      "ultrametric_minimum": 44
+    },
+    {
+      "condition_i_edges": 54,
+      "metric_minimum": 20,
+      "order": 20,
+      "ultrametric_minimum": 46
+    },
+    {
+      "condition_i_edges": 57,
+      "metric_minimum": 22,
+      "order": 21,
+      "ultrametric_minimum": 49
+    },
+    {
+      "condition_i_edges": 60,
+      "metric_minimum": 22,
+      "order": 22,
+      "ultrametric_minimum": 51
+    },
+    {
+      "condition_i_edges": 63,
+      "metric_minimum": 24,
+      "order": 23,
+      "ultrametric_minimum": 54
+    },
+    {
+      "condition_i_edges": 66,
+      "metric_minimum": 24,
+      "order": 24,
+      "ultrametric_minimum": 56
+    },
+    {
+      "condition_i_edges": 69,
+      "metric_minimum": 26,
+      "order": 25,
+      "ultrametric_minimum": 59
+    },
+    {
+      "condition_i_edges": 72,
+      "metric_minimum": 26,
+      "order": 26,
+      "ultrametric_minimum": 61
+    },
+    {
+      "condition_i_edges": 75,
+      "metric_minimum": 28,
+      "order": 27,
+      "ultrametric_minimum": 64
+    },
+    {
+      "condition_i_edges": 78,
+      "metric_minimum": 28,
+      "order": 28,
+      "ultrametric_minimum": 66
+    },
+    {
+      "condition_i_edges": 81,
+      "metric_minimum": 30,
+      "order": 29,
+      "ultrametric_minimum": 69
+    },
+    {
+      "condition_i_edges": 84,
+      "metric_minimum": 30,
+      "order": 30,
+      "ultrametric_minimum": 71
+    },
+    {
+      "condition_i_edges": 87,
+      "metric_minimum": 32,
+      "order": 31,
+      "ultrametric_minimum": 74
+    },
+    {
+      "condition_i_edges": 90,
+      "metric_minimum": 32,
+      "order": 32,
+      "ultrametric_minimum": 76
+    }
+  ],
+  "exhaustive_tables": [
+    {
+      "metric_tables": 3,
+      "order": 2,
+      "three_central_metric_tables": 0,
+      "ultrametric_tables": 3
+    },
+    {
+      "metric_tables": 24,
+      "order": 3,
+      "three_central_metric_tables": 0,
+      "ultrametric_tables": 12
+    },
+    {
+      "metric_tables": 482,
+      "order": 4,
+      "three_central_metric_tables": 99,
+      "ultrametric_tables": 60
+    }
+  ],
+  "four_point": {
+    "condition_i": true,
+    "real_metric_center": [
+      0,
+      4,
+      5
+    ],
+    "real_metric_edges": 4,
+    "ultrametric_center": [
+      "0",
+      "1/2",
+      "1"
+    ],
+    "ultrametric_edges": 6
+  },
+  "minimum_orders": [
+    {
+      "center_size": 1,
+      "order": 1
+    },
+    {
+      "center_size": 2,
+      "order": 2
+    },
+    {
+      "center_size": 3,
+      "order": 4
+    },
+    {
+      "center_size": 4,
+      "order": 4
+    },
+    {
+      "center_size": 5,
+      "order": 6
+    },
+    {
+      "center_size": 6,
+      "order": 6
+    },
+    {
+      "center_size": 7,
+      "order": 8
+    },
+    {
+      "center_size": 8,
+      "order": 8
+    },
+    {
+      "center_size": 9,
+      "order": 10
+    },
+    {
+      "center_size": 10,
+      "order": 10
+    },
+    {
+      "center_size": 11,
+      "order": 12
+    },
+    {
+      "center_size": 12,
+      "order": 12
+    },
+    {
+      "center_size": 13,
+      "order": 14
+    },
+    {
+      "center_size": 14,
+      "order": 14
+    },
+    {
+      "center_size": 15,
+      "order": 16
+    },
+    {
+      "center_size": 16,
+      "order": 16
+    },
+    {
+      "center_size": 17,
+      "order": 18
+    },
+    {
+      "center_size": 18,
+      "order": 18
+    },
+    {
+      "center_size": 19,
+      "order": 20
+    },
+    {
+      "center_size": 20,
+      "order": 20
+    },
+    {
+      "center_size": 21,
+      "order": 22
+    },
+    {
+      "center_size": 22,
+      "order": 22
+    },
+    {
+      "center_size": 23,
+      "order": 24
+    },
+    {
+      "center_size": 24,
+      "order": 24
+    }
+  ],
+  "status": "ALL_CHECKS_OK",
+  "tree_corollaries": {
+    "binary": [
+      {
+        "enumerated_isometries": 1,
+        "group_order_formula": 1,
+        "height": 0,
+        "order": 1,
+        "sphere_counts": [
+          1
+        ]
+      },
+      {
+        "enumerated_isometries": 2,
+        "group_order_formula": 2,
+        "height": 1,
+        "order": 2,
+        "sphere_counts": [
+          1,
+          1
+        ]
+      },
+      {
+        "enumerated_isometries": 8,
+        "group_order_formula": 8,
+        "height": 2,
+        "order": 4,
+        "sphere_counts": [
+          1,
+          1,
+          2
+        ]
+      },
+      {
+        "enumerated_isometries": 128,
+        "group_order_formula": 128,
+        "height": 3,
+        "order": 8,
+        "sphere_counts": [
+          1,
+          1,
+          2,
+          4
+        ]
+      },
+      {
+        "group_order_formula": 32768,
+        "height": 4,
+        "order": 16,
+        "sphere_counts": [
+          1,
+          1,
+          2,
+          4,
+          8
+        ]
+      },
+      {
+        "group_order_formula": 2147483648,
+        "height": 5,
+        "order": 32,
+        "sphere_counts": [
+          1,
+          1,
+          2,
+          4,
+          8,
+          16
+        ]
+      }
+    ],
+    "regular": [
+      {
+        "branching": [
+          3
+        ],
+        "enumerated_isometries": 6,
+        "order": 3,
+        "sphere_counts": [
+          1,
+          2
+        ]
+      },
+      {
+        "branching": [
+          4
+        ],
+        "enumerated_isometries": 24,
+        "order": 4,
+        "sphere_counts": [
+          1,
+          3
+        ]
+      },
+      {
+        "branching": [
+          2,
+          3
+        ],
+        "enumerated_isometries": 72,
+        "order": 6,
+        "sphere_counts": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "branching": [
+          3,
+          2
+        ],
+        "enumerated_isometries": 48,
+        "order": 6,
+        "sphere_counts": [
+          1,
+          1,
+          4
+        ]
+      },
+      {
+        "branching": [
+          2,
+          2,
+          2
+        ],
+        "enumerated_isometries": 128,
+        "order": 8,
+        "sphere_counts": [
+          1,
+          1,
+          2,
+          4
+        ]
+      }
+    ]
+  }
+}

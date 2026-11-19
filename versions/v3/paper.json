@@ -1,0 +1,66 @@
+{
+  "files": {
+    "pdf": {
+      "bytes": 105303,
+      "matches_public": true,
+      "path": "paper.pdf",
+      "public_sha256": "7217222ee474bdbba0c41c9078b9236b0a24615a3317284bbd45929e6dddfa7c",
+      "sha256": "7217222ee474bdbba0c41c9078b9236b0a24615a3317284bbd45929e6dddfa7c"
+    },
+    "source": {
+      "bytes": 22872,
+      "matches_public": true,
+      "path": "source.archive",
+      "public_sha256": "0df6f71620156c76b18d2f65b8062992175013bf8ee0d9a9c9eb429254058b9b",
+      "sha256": "0df6f71620156c76b18d2f65b8062992175013bf8ee0d9a9c9eb429254058b9b"
+    }
+  },
+  "source_identity": "Mathesis public projection",
+  "work": {
+    "abstract_text": "We refute Conjecture 4.2 in Section 4, p. 13, of Dovgoshey and Rovenska, arXiv:2610.11596v1, extend their (2026) central-edge bounds, and derive companion corollaries from Petrov's (2022) homogeneous-tree characterization and Dovgoshey et al.'s (2026) perfect-binary-tree theorem. A four-point ultrametric has six central edges against four in a metric. For every n >= 4, the three-central minima are 2 ceil(n/2) over metrics and 2n - 4 + ceil(n/2) over ultrametrics. Conjecture 4.1 is corrected to orders 1 and even; Problem 4.3 has minimum order 1 for k=1, k for even k, and k+1 for odd k >= 3. Earlier counterexamples to Conjecture 4.1 by Love (2023) and Bargetz et al. (2024) are credited. For every feasible pair with n >= 3, the metric edge minimum is (k-1) ceil(n/2). The tree corollaries give the isometry groups and sphere counts of minimum-order ultrametrics, with explicit coverage of the related questions.",
+    "authors": [
+      {
+        "affiliation": "ChronoAI Pte Ltd, Singapore",
+        "name": "Haobo Ma"
+      },
+      {
+        "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+        "name": "Wenlin Zhang"
+      }
+    ],
+    "concept_doi": null,
+    "current_version": 3,
+    "doi": null,
+    "lean_source": {
+      "revision": "8aa554ef66d0c1970b81b49632cd8a73a09ee34f",
+      "url": "https://github.com/the-omega-institute/trureturing/blob/8aa554ef66d0c1970b81b49632cd8a73a09ee34f/D5/S3/Combinatorics/Geometry/DovgosheyRovenskaCentralEdges.lean"
+    },
+    "license": "CC-BY-4.0",
+    "msc": [],
+    "pdf": {
+      "bytes": 105303,
+      "sha256": "7217222ee474bdbba0c41c9078b9236b0a24615a3317284bbd45929e6dddfa7c",
+      "url": "/api/v1/collected-papers/central-edges/files/pdf?version=3"
+    },
+    "previous_version": null,
+    "publication": "public",
+    "published_on": "2026-11-19T12:25:27.413538897Z",
+    "record": "central-edges",
+    "repository_name": "central-edges",
+    "source": {
+      "bytes": 22872,
+      "sha256": "0df6f71620156c76b18d2f65b8062992175013bf8ee0d9a9c9eb429254058b9b",
+      "url": "/api/v1/collected-papers/central-edges/files/source?version=3"
+    },
+    "title": "Refuting Dovgoshey–Rovenska Conjecture 4.2, arXiv:2610.11596v1, Section 4, p. 13: sharp bounds and corollaries of Petrov (2022) and Dovgoshey et al. (2026)",
+    "versions": [
+      {
+        "previous_version": null,
+        "published_on": "2026-11-19T12:25:27.413538897Z",
+        "revision": "3",
+        "version": 3
+      }
+    ],
+    "work": "central-edges"
+  }
+}

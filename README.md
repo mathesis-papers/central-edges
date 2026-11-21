@@ -5,13 +5,15 @@
 We refute Conjecture 4.2 in Section 4, p. 13, of Dovgoshey and Rovenska, arXiv:2610.11596v1, extend their (2026) central-edge bounds, and derive companion corollaries from Petrov's (2022) homogeneous-tree characterization and Dovgoshey et al.'s (2026) perfect-binary-tree theorem. A four-point ultrametric has six central edges against four in a metric. For every n >= 4, the three-central minima are 2 ceil(n/2) over metrics and 2n - 4 + ceil(n/2) over ultrametrics. Conjecture 4.1 is corrected to orders 1 and even; Problem 4.3 has minimum order 1 for k=1, k for even k, and k+1 for odd k >= 3. Earlier counterexamples to Conjecture 4.1 by Love (2023) and Bargetz et al. (2024) are credited. For every feasible pair with n >= 3, the metric edge minimum is (k-1) ceil(n/2). The tree corollaries give the isometry groups and sphere counts of minimum-order ultrametrics, with explicit coverage of the related questions.
 
 - PDF: [frozen public file](paper.pdf)
+- DOI: [https://doi.org/10.5281/zenodo.24369118](https://doi.org/10.5281/zenodo.24369118)
+- Concept DOI: [https://doi.org/10.5281/zenodo.24369117](https://doi.org/10.5281/zenodo.24369117)
 - License: CC-BY-4.0
 - Version: 3
 - Mathesis record: [central-edges](https://mathesis-omega-research.apps.chrono-ai.fun/papers/central-edges?version=3)
 
 ## How to cite
 
-Haobo Ma, Wenlin Zhang (2026). Refuting Dovgoshey–Rovenska Conjecture 4.2, arXiv:2610.11596v1, Section 4, p. 13: sharp bounds and corollaries of Petrov (2022) and Dovgoshey et al. (2026). Mathesis, version 3. https://mathesis-omega-research.apps.chrono-ai.fun/papers/central-edges?version=3
+Haobo Ma, Wenlin Zhang (2026). Refuting Dovgoshey–Rovenska Conjecture 4.2, arXiv:2610.11596v1, Section 4, p. 13: sharp bounds and corollaries of Petrov (2022) and Dovgoshey et al. (2026). Mathesis, version 3. https://doi.org/10.5281/zenodo.24369118
 
 ## Statement progress
 

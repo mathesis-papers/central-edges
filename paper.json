@@ -28,9 +28,9 @@
         "name": "Wenlin Zhang"
       }
     ],
-    "concept_doi": null,
+    "concept_doi": "10.5281/zenodo.24369117",
     "current_version": 3,
-    "doi": null,
+    "doi": "10.5281/zenodo.24369118",
     "lean_source": {
       "revision": "8aa554ef66d0c1970b81b49632cd8a73a09ee34f",
       "url": "https://github.com/the-omega-institute/trureturing/blob/8aa554ef66d0c1970b81b49632cd8a73a09ee34f/D5/S3/Combinatorics/Geometry/DovgosheyRovenskaCentralEdges.lean"
